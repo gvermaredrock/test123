@@ -1,0 +1,102 @@
+w21india server sudo UqOCYBponjPxZhM2IVY9
+w21singapore server sudo QXGB3chLcq2LX9KxB19S
+
+
+
+Currently I have junk traffic looking for phone numbers. Now, I have to evolve as a blog where business owners are live to chat, since they get business from here. That is possible only if I have valuable traffic generated for hundreds of keywords.
+1. To get actual leads from public, not just phone num enquiry - lead gen banners on top and in content, content focused on keywords, seo, speed.
+2. To add travel, astro, doctor, hair fall clinic, lawyer and a lot of sections so we can add chat - category blogs, keyword analysis
+3. To add IT lead gen content, so we can capitalize on them for our own revenue.
+I have seen that bloggers with my amount of traffic are making 1Lac/mo by just affiliate and adsense. I will register a company this month, hire people for my SEO ??, sales for seo, workalong and wuchna ads.
+Many known sites like lbb
+Blog on how to manage your business (in foreign), newsletter, let people subscribe, monetize via newsletters.
+Inrease traffic immediately and then tell vendors to get a mobile app for their business where they can chat with the website visitor, wuchna visitors, with jd leads etc. Give this mobile app on a subscription.
+
+Learn from competitors:
+
+TODO:
+    POST:   listing_id, user_id, slug, title, body, data, timestamps
+            excerpt, banner_img, headline, lead, meta_title, primarybutton: primarybuttontext, primarybuttonlink, meta_description
+            later: links - appointment etc.
+    PRODUCT:
+    show latest posts on homepage
+    Add a new listing-> Zomato etc links for sameas in proper field, menu for restaurants, prices for others, services, products, appointment link.
+    Redirect url schema to preserve rankings and save SEO
+    make mobile app with option to edit website, chat with clients, accept bookings, notifications
+    make vendor answer questions. calculate priority of ranking based on reviews, commission, posts regularity, answers, authoritativeness
+    https://support.google.com/business/answer/7475773?hl=en
+    Send email on lead if email is present
+    for astrologers, ask if they do online consulting. if yes, ask them
+    for new listings, ask working timings, ask for a logo
+    Kolkata howrah drama
+    social media sharing icons on blog.
+    verified vendor shield display on listing
+    give free website + website to 7aura
+    From now on, the focus is on adding content, and redirecting the users where we need them to go.
+    add IT enquiry form on it-company.
+    What are the users supposed to do on a blog? read and go? add a subscription box or atleast some functionality na
+    1. old submitted listings 2. listings with no blogs
+    Admin edit an lp - easily plz. Edit Blog. /admineditblog/{id}
+    focus on raw unclaimed false businesses. make them diff shade?
+    4. old blog faqs
+    editreview page for admin
+    https://schema.org/LocalBusiness - if restaurant, then? see all categories. https://www.schemaapp.com/tutorial/how-to-do-schema-markup-for-local-business/ https://developers.google.com/search/docs/data-types/review-snippet https://schema.org/LocalBusiness https://search.google.com/test/rich-results
+    geocoding - some localities remaining,
+    add new cities
+    premium positioning
+    --- add to all other countries. +91, m1, um1 even in link preloads. config->timezone and js->countryname. premium p for usa vendor
+    --- Nipun Panchamiya CA email
+    --- LIC Office work
+    END of Dev phase 1 ----- add content etc. in lps ---- START of Phase 2
+    user avatars, category->bg_image, short_image
+    Reviews->image, video upload
+    svg of every category (in listing)
+    resendotp. Does not come many times.
+    blog can be created by user, paid for, expiry chosen.
+    Amazon Affiliates in lot of blog pages
+    make lead generation banners
+    scout show listings, services, products, posts etc. also
+    Claim banner on top if unclaimed - comes on ?vendor=true send link via l/{id} short route
+    Blogs on right side of every listing, including relevant chat options.
+    click to call functionality -> to be changed to send message.
+    amp of listing page ?
+    chat can be embedded on vendor website with rating
+
+First focus is on adding lot of content - lp and listing, banners, svgs, getting actual leads, not just phone enquiries <-traffic, lead, paid blog, amazon affiliate
+add IT software lead, hair clinic, enquiry systems <- revenue
+then add chat and reservation system <- revenue
+then add website making, blog, products and ecommerce, services <- enrichment
+then add common forum <- enrichment
+
+Tabs to work on:
+https://quickadminpanel.com/blog/how-to-add-stripe-one-time-payment-form-to-laravel-project/
+https://web.dev/defer-non-critical-css/
+https://ahrefs.com/blog/seo-basics/
+http://www.openvine.com/small-business-internet-blog/6-ways-to-optimize-your-blog-posts-for-seo
+https://goinswriter.com/seo-basics/
+https://laracasts.com/series/php8-crash-course
+https://popsql.com/learn-sql/postgresql/how-to-query-a-json-column-in-postgresql
+
+you now have a blog system in which listings are sprinkled in between as value add. Plus, search is on it. make this live now. we are now a blogger. Bloggers live by: affiliate marketing, selling ads, selling verified ratings to vendors, backlinking to vendor websites. Bloggers focus on SEO keywords and providing value to their readers.
+
+Had a dream of developing an entire small country into something like a Singapore.
+When my growth is dependent on just myself, why can't I grow Wuchna to be a very large company? I already have decided to provide IT services and service transactions to millions of vendors, what is stopping me? Let me start growing Wuchna.
+
+
+/////////////////////////
+Cache items list:
+/////////////////////////
+
+HEAVY
+blogs_in_locality_{id}  $blog->locality->blogs
+localities_of_city_{title}  $city->localities()->orderBy('title')->select('title','id')->get()
+random_lps_of_city_{id}    $city->blogs()->with('locality')->take(70)->cursor()->pluck('locality.title','slug')->toArray()
+
+$city->slug.'-blog-sitemap'
+$city->slug.'-listing-sitemap'
+wuchna-sitemap
+
+300 second caching for stuff on homepage
+
+LIGHT
+footercities

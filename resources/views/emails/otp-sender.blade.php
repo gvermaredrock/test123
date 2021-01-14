@@ -1,0 +1,1 @@
+OTP for verification on Wuchna Business Network is {{$otp}}

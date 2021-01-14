@@ -1,0 +1,7 @@
+/*!
+ * autocomplete.js 0.37.1
+ * https://github.com/algolia/autocomplete.js
+ * Copyright 2020 Algolia, Inc. and other contributors; Licensed MIT
+ */
+
+/*! algoliasearch.umd.js | 4.6.0 | © Algolia, inc. | https://github.com/algolia/algoliasearch-client-javascript */
